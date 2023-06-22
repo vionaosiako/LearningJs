@@ -21,3 +21,13 @@ app.post('/api/users', (req,res) => {
     res.json(newUser);
 });
 
+app.delete('/api/users/:id', (req,res) => {
+    const userId = req.params.id;
+    //Delete the user with the spcified ID
+    //Perform necessary operations to delete the user
+    res.sendStatus(204); // 204 No Content response
+});
+
+// app.put('api/users/:id', (req,res) => {
+//     const userId = req
+// })
