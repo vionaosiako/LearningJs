@@ -8,3 +8,8 @@ const port = 8080;
 app.listen(port, () => {
     console.log(`Server on ${port}`);
 })
+app.get('/api/users', (req,res) => {
+    const users = ['John', 'Jane', 'Alice'];
+    res.json(users);
+});
+
