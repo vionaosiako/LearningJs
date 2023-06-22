@@ -13,3 +13,11 @@ app.get('/api/users', (req,res) => {
     res.json(users);
 });
 
+app.post('/api/users', (req,res) => {
+    //Create a new user based on the data in request body
+    const newUser = req.body;
+    //Perorm necessary operations to save the user
+    //Return the created user
+    res.json(newUser);
+});
+
