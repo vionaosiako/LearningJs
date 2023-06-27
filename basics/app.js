@@ -11,6 +11,10 @@ app.get("/", (req,res)=>{
     res.sendFile(__dirname + "/index.html");
 });
 
+app.post("/",(req,res)=>{
+    res.send("Sucessful registered");
+});
+
 app.listen(5000,()=>{
     console.log("listening on port 5000")
 });
