@@ -2,6 +2,8 @@
 const express = require('express');
 // create the express app
 const app=  express();
+//import thed ejs templae
+app.set('view engine', 'ejs');
 // define the port
 const port = 5000
 // define the listening port
