@@ -16,6 +16,11 @@ app.get('/google', (req,res) => {
     res.send("Hello google")
 });
 
+app.get('/home',(req,res) => {
+    //render the index file
+    res.render("index")
+});
+
 app.listen(port, () => {
     console.log(`App is listening port ${port}`);
 });
