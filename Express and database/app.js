@@ -7,7 +7,7 @@ const app=  express();
 //import thed ejs templae
 app.set('view engine', 'ejs');
 // define the port
-const port = 5000
+const port = process.env.PORT
 // define the listening port
 // define your route
 app.get('/', (req, res) => {
