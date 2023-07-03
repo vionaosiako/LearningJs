@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 // import the express module
 const express = require('express');
 // create the express app
