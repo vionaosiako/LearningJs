@@ -9,7 +9,12 @@ const port = 5000
 app.get('/', (req, res) => {
     res.send('Hello everyone')
 })
+
+app.get('/google', (req,res) => {
+    res.send("Hello google")
+});
+
 app.listen(port, () => {
     console.log(`App is listening port ${port}`);
-})
+});
 
